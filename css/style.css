@@ -26,6 +26,7 @@ div.text-overlay{
     color: aliceblue;
     font-weight: 60%;
     font-size: 40%;
+    text-decoration: none;
 }
 div.main-text{
     position: absolute;
