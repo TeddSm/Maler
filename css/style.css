@@ -1,0 +1,85 @@
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+div.text-overlay{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-weight: bold;
+    line-height: 0.1;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    }
+#button-call{
+    padding: 5% 10%;
+    outline: none;
+    border: none;
+    border-radius: 60%;
+    background-color: rgba(94, 191, 248, 0.241);
+    color: aliceblue;
+    font-weight: 60%;
+    font-size: 40%;
+}
+div.main-text{
+    position: absolute;
+    top: 270%;
+    text-align: center;
+    color: black;
+}
+div.table-text{
+    position: absolute;
+    top: 110%;
+    left: 9%;
+    text-align: center;
+    color: black;
+}
+button.on-main{
+    padding: 1% 1%;
+    outline: 10%;
+    border: 5px solid;
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(94, 191, 248, 0.241);
+    font-weight: 100%;
+    font-size: 100%;
+}
+section.app{
+    background-color: rgba(94, 191, 248, 0.241);
+    left: 0;
+}
+#accomplishments{
+    background-color: rgba(94, 191, 248, 0.241);
+    text-align: left;
+}
+#header{
+    position:fixed;
+    left:0%;
+    top:0%;
+    z-index: +100;
+    width:100%;
+    background-color: rgb(185, 229, 255); 
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+nav li{
+    margin-left: 10%;
+}
+a:hover{
+background-color: black;
+border: 5px;
+}
+
+
+
