@@ -118,3 +118,9 @@ a {
     font-size: 20px;
 }
 
+.service-img {
+    width: 1500px;
+    height: 700px;
+}
+
+/* delete     width: 1500px; */
