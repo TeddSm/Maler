@@ -3,43 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content="width=device-width, intial-scale=1.0">
-<title> Головна сторінка </title>
+<title> Малярні роботи </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+  integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@400;500;700;900&display=swap"
+  rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header id="header">
-    <nav>
-      <ul>
-        <li>
-        <img 
-        src="./images/logo.png"
-        width="70"
-        height="70"/>
-        </li>
-      <li>ПН-ПТ 08:00 - 20:00</li>
-      <li><a href="#table-text" class="menu">Наші послуги</a></li><li><a href="#our-works">Наші роботи</a></li><li><a href="#app">Контакти</a></li>
-      </ul>
-      </nav>
+  <header id="header" class="header">
+    <div class="header-container">
+      <nav class="header-nav">
+        <a href="./index.html" class="header-logo">
+          <img 
+          src="./images/logo.png"
+          width="70"
+          height="70"/>
+          Maler
+        </a>
+        <ul  class="nav-list">
+          <li  class="nav-item"><a href="#table-text" class="nav-link">Послуги</a></li>
+          <li  class="nav-item"><a href="#our-works" class="nav-link">Роботи</a></li>
+          <li  class="nav-item"><a href="#app" class="nav-link">Контакти</a></li>
+        </ul>
+        </nav>
+      <address  class="header-address">
+        <ul class="address-list">
+          <li>08:00 - 20:00</li>
+          <li><a href="tel:380987854232">098-785-42-32</a></li>
+        </ul>
+      </address>
+    </div>
     </header>
     <main>
-    <video src="./images/14.mp4" autoplay muted loop></video>
-    <div class="text-overlay">
+    <img src="./images/photo.jpg"></img>
+    <section class="text-overlay">
         <h1>Малярні роботи</h1>
-        <h4>Швидко, якісно. Робимо все під ключ</h4>
+        <h2>Швидко, якісно. Робимо все під ключ</h2>
         <a href="tel:380987854232" id="button-call">Зателефонувати</a>
-      </div>
-      <div class="table-text" id="table-text">
+      </section>
+      <section class="table-text" id="table-text">
       <h2>Наші послуги: </h2>
-        <table cellspacing="40%">
-          <tr>
-            <td>Штукатурка <p>Перетворимо ваші стіни в гладкі, рівні поверхні з нашою професійною штукатуркою</p><p><img src="./images/photo.jpg" width="540" height="380"></p></td><td>Гіпсокартонні роботи<p>Високоякісні роботи з гіпсокартону для вашого ідеального інтер'єру.</p><p><img src="./images/photo.jpg" width="540" height="380"></p></td>
-            </tr>
-            <tr>
-              <td>Шпаклівка <p>Ідеальна поверхня перед фарбуванням або обклеюванням шпалерами.</p><p><img src="./images/photo.jpg" width="540" height="380"></p></td><td>Фарбування стін<p>Творче фарбування, що надасть вашим стінам особливий колір і настрій.</p><p><img src="./images/photo.jpg" width="540" height="380"></p></td>
-              </tr>
-        </table>
-        </div>
-        <div class="main-text">
+        <ul>
+          <li>
+            Штукатурка 
+            <p>Перетворимо ваші стіни в гладкі, рівні поверхні з нашою професійною штукатуркою</p>
+            <p><img src="./images/photo.jpg" width="540" height="380"></p>
+          <li>
+            Гіпсокартонні роботи
+            <p>Високоякісні роботи з гіпсокартону для вашого ідеального інтер'єру.</p>
+            <p><img src="./images/photo.jpg" width="540" height="380"></p>
+          </li>
+          <li>
+            Шпаклівка 
+            <p>Ідеальна поверхня перед фарбуванням або обклеюванням шпалерами.</p>
+            <p><img src="./images/photo.jpg" width="540" height="380"></p>
+          <li>
+            Фарбування стін
+            <p>Творче фарбування, що надасть вашим стінам особливий колір і настрій.</p>
+            <p><img src="./images/photo.jpg" width="540" height="380"></p>
+          </li>
+        </ul>
+        </section>
+        <section class="main-text">
         <button type="button" class="on-main">Консультація за телефоном. <br>Домовляємося про зустріч на об'єкті.</button>
         <button type="button" class="on-main">Замір та розрахунок.<br> Фахівець виїжджає на об'єкт для виконання вимірів та оцінки вартості робіт.</button>
         <button type="button" class="on-main">Здача роботи.<br> Прийом виконаної роботи</button>
@@ -51,6 +81,7 @@
           <img src="./images/photo.jpg" />
           <img src="./images/photo.jpg" />
         </p>
+        </section>
         <section class="app" id="app">
           <h2>Замовити консультацію</h2>
           <h3>Замовте консультацію і ми Вам передзвонимо в зручний для Вас час!</h3>
@@ -63,6 +94,7 @@
         <input type="time">
         </p>
         </section>
+        <section>
         <h2> Майстри гармонії: ваші експерти в малярних роботах у Києві</h2>
 
 <p>Вітаємо вас на нашому веб-сайті, де ми пропонуємо високоякісні малярні послуги у Києві! Ми - команда професіоналів з багаторічним досвідом, які спеціалізуються у плиточних, гіпсокартонних роботах, штукатурці, шпаклюванні та фарбуванні стін. Наша місія - створювати найкращі рішення для ваших приміщень, надаючи їм неповторний вигляд і забезпечуючи якість, якою ви будете пишатися.</p>
@@ -83,8 +115,8 @@
     Конкурентоспроможні ціни: Ми пропонуємо доступні та конкурентоспроможні ціни, щоб зробити наші послуги доступними для всіх.
   </li>
   </ul>
-Нехай ваші стіни стануть шедевром завдяки нашим майстрам. Звертайтеся до нас для отримання безкоштовної консультації та обрання найкращого рішення для вашого приміщення. Разом ми створимо красу та гармонію в вашому житлі або офісі!
-    </div>
+<p>Нехай ваші стіни стануть шедевром завдяки нашим майстрам. Звертайтеся до нас для отримання безкоштовної консультації та обрання найкращого рішення для вашого приміщення. Разом ми створимо красу та гармонію в вашому житлі або офісі!</p>
+    </section>
     </main>
     <footer>
     </footer>
