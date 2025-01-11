@@ -99,16 +99,18 @@ a {
 }
 
 .service-list {
-
+    width: 1500px;
 }
 
 .service-item {
     margin-bottom: 20px;
+    width: 1500px;
 }
 
 .service-title {
     font-weight: 900;
     font-size: 28px;
+    width: 1500px;
 }
 
 .service-list-title {
