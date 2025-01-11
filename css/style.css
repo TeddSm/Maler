@@ -1,5 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
+    width: 1519px;
 }
 
 ul,
@@ -60,7 +61,7 @@ a {
 
 .hero {
     background-image: url(../images/photo.jpg);
-    width: 1500px;
+    width: 1519px;
     height: 700px;
     padding-left: 100px;
     align-items: center;
@@ -95,22 +96,21 @@ a {
     padding: 40px;
     text-align: center;
     background-color: #824a012b;
-    width: 1500px;
+    width: 1519px;
 }
 
 .service-list {
-    width: 1500px;
+
 }
 
 .service-item {
     margin-bottom: 20px;
-    width: 1500px;
+
 }
 
 .service-title {
     font-weight: 900;
     font-size: 28px;
-    width: 1500px;
 }
 
 .service-list-title {
@@ -119,7 +119,7 @@ a {
 }
 
 .service-img {
-    width: 1420px;
+    width: 1440px;
     height: 700px;
 }
 
