@@ -19,6 +19,7 @@ a {
 
 .header {
     color: #824a01;
+    background: #824a012b;
 }
 
 .header-container {
@@ -105,7 +106,6 @@ a {
 
 .service-item {
     margin-bottom: 20px;
-
 }
 
 .service-title {
@@ -123,4 +123,80 @@ a {
     height: 700px;
 }
 
-/* delete     width: 1500px; */
+.consultation {
+
+}
+
+.consultation-list {
+    text-align: center;
+    display: flex;
+    margin: 180px 110px;
+    gap: 55px;
+
+}
+.consultation-item {
+    text-align: center;
+    background-color: #824a012b;
+    border-radius: 60px;
+    padding: 10px 40px;
+}
+.consultation-link {
+   
+}
+
+.works {
+    background-color: #824a012b;
+    text-align: center;
+    padding: 40px ;
+}
+
+.works-title {
+
+}
+
+.works-text {
+    padding: 0 110px;
+    margin: 0;
+}
+
+.works-list {
+    
+}
+
+.works-item {
+    padding-top: 50px;
+}
+
+.works-img {
+    width: 1440px;
+    height: 700px;
+}
+
+.contacts {
+    text-align: center;
+    margin: 110px 400px;
+    padding: 40px;
+    background-color: #824a012b;
+    border-radius: 70px;
+}
+
+.contacts-list {
+    text-align: auto;
+}
+
+.contacts-item {
+    padding: 5px;
+    text-align: left;
+}
+
+.contacts-input {
+    width: 100%;
+}
+
+.contacts-btn {
+    text-align: center;
+    padding: 20px 70px;
+    border-radius: 70px;
+    border-color: #824a01;
+    border-style: none;
+}
