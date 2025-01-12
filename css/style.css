@@ -19,7 +19,6 @@ a {
 
 .header {
     color: #824a01;
-    background: #824a012b;
 }
 
 .header-container {
@@ -33,7 +32,7 @@ a {
     align-items: center;
     gap: 20px;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 39px;
 }
 
 .header-nav {
@@ -44,18 +43,37 @@ a {
     display: flex;
     align-items: center;
     font-weight: 800;
-    margin-left: 300px;
-    margin-right: 450px;
+    margin-left: 350px;
+    margin-right: 250px;
     gap: 100px;
+}
 
+
+.nav-link {
+    padding: 10px 10px;
+}
+
+.nav-link:hover {
+    background-color: #824a012b;
 }
 
 .header-address {
     font-weight: 900;
+    padding: 20px 10px;
+    width: 300px;
+    text-align: center;
 }
 
 .address-list {
-    align-items: center;
+    padding: 10px 10px;
+}
+
+.address-list:hover {
+    background-color: #824a012b;
+}
+
+.address-link {
+    padding: 5px 0;
 }
 
 /* HERO (Section 1) */
@@ -89,6 +107,26 @@ a {
     padding: 20px;
     background-color: #824a01;
     border-radius: 30px;
+}
+
+.about {
+    text-align: left;
+    padding: 0 100px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.about-span {
+    color: #824a01;
+}
+
+.about-list {
+    list-style: normal;
+    margin-top: 30px;
+}
+
+.about-item {
+    margin-bottom: 10px;
 }
 
 /* SERVICE (Section 2) */
@@ -199,4 +237,7 @@ a {
     border-radius: 70px;
     border-color: #824a01;
     border-style: none;
+}
+.footer {
+    background-color: #824a012b;
 }
