@@ -59,13 +59,23 @@ a {
 
 .header-address {
     font-weight: 900;
-    padding: 20px 10px;
+    padding: 0 10px;
     width: 300px;
     text-align: center;
 }
 
 .address-list {
     padding: 10px 10px;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
 }
 
 .address-list:hover {
@@ -111,7 +121,7 @@ a {
 
 .about {
     text-align: left;
-    padding: 0 100px;
+    padding: 0 100px 10px;
     font-weight: 500;
     font-size: 18px;
 }
@@ -121,18 +131,24 @@ a {
 }
 
 .about-list {
-    list-style: normal;
+    list-style: none;
     margin-top: 30px;
+    display: flex;
+    padding: 0 0px;
+    text-align: center;
 }
 
 .about-item {
-    margin-bottom: 10px;
+    margin: 0 10px 10px;
+    padding: 10px 10px;
+    background-color: #824a012b;
+    border-radius: 60px;
 }
 
 /* SERVICE (Section 2) */
 
 .service {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     background-color: #824a012b;
     width: 1519px;
