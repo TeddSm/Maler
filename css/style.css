@@ -107,6 +107,7 @@ a {
     font-size: 60px;
     font-weight: 900;
     margin: 0 0;
+    padding: 10px 10px;
 }
 
 .hero-text {
@@ -117,7 +118,7 @@ a {
 
 .hero-link {
     padding: 20px;
-    background-color: #824a014e;
+    background-color: #824a0178;
     border-radius: 30px;
     font-size: 22px;
     display: inline-flex;
@@ -170,11 +171,18 @@ a {
 }
 
 .service-list {
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
 }
 
 .service-item {
     margin-bottom: 20px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 30px;;
+    background-color: #824a0116;
 }
 
 .service-title {
@@ -188,7 +196,7 @@ a {
 }
 
 .service-img {
-    width: 1440px;
+    width: 680px; 
     height: 700px;
 }
 
