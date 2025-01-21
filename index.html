@@ -123,29 +123,52 @@
         <section class="contacts" id="app">
           <h2 class="contacts-title">Замовити консультацію</h2>
           <h3 class="contacts-text">Замовте консультацію і ми Вам передзвонимо в зручний для Вас час!</h3>
-        <div class="contacts-container">
-        <ul class="contacts-list">
-          <li class="contacts-item">
-            Як до Вас звертатись:
-            <input type="text" class="contacts-input">
-          </li>
-          <li class="contacts-item">
-            Телефон:
-            <input type="text" class="contacts-input">
-          </li>
-          <li class="contacts-item">
-            Адреса:
-            <input type="text" class="contacts-input">
-          </li>
-          <li class="contacts-item">
-            Зручний час:
-            <input type="time" class="contacts-input">
-          </li>
-          <li class="contacts-item">
-            <button type="button" class="contacts-btn">Відправити</button>
-          </li>
-        </ul>
-        </div>
+        <form id="tg">
+          <div class="contacts-container">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              Як до Вас звертатись:
+              <input type="text" class="contacts-input" name="name">
+            </li>
+            <li class="contacts-item">
+              Телефон:
+              <input type="text" class="contacts-input" name="phone">
+            </li>
+            <li class="contacts-item">
+              Адреса:
+              <input type="text" class="contacts-input">
+            </li>
+            <li class="contacts-item">
+              Зручний час:
+              <input type="time" class="contacts-input">
+            </li>
+            <li class="contacts-item">
+              <button type="submit" class="contacts-btn">Відправити</button>
+            </li>
+          </ul>
+          </div>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script>
+          const CHAT_ID = "-1002440644199";
+          const URI_API = 'https://api.telegram.org/bot7611522727:AAG5QaGW_yotZrXVYHiAETjNKO5ixtbZa8Y/sendMessage';
+
+          document.getElementById('tg').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let message = 'Заявка з сайту: \n';
+            
+            message += 'Імя : ' + this.name.value + "\n";
+            message += "Телефон : " + this.phone.value;
+
+            axios.post(URI_API, {
+              chat_id : CHAT_ID,
+              parse_mod : 'html',
+              text: message
+            })
+          })
+        </script>
+
         </section>
   </main>
     <footer class="footer">
