@@ -122,7 +122,7 @@
         </section>
         <section class="contacts" id="app">
           <h2 class="contacts-title">Замовити консультацію</h2>
-          <h3 class="contacts-text">Замовте консультацію і ми Вам передзвонимо в зручний для Вас час!</h3>
+          <h3 class="contacts-text">Замовте консультацію і ми Вам передзвонимо!</h3>
         <form id="tg">
           <div class="contacts-container">
           <ul class="contacts-list">
@@ -136,35 +136,61 @@
             </li>
             <li class="contacts-item">
               Адреса:
-              <input type="text" class="contacts-input">
+              <input type="text" class="contacts-input" name="address">
             </li>
             <li class="contacts-item">
-              Зручний час:
-              <input type="time" class="contacts-input">
-            </li>
-            <li class="contacts-item">
-              <button type="submit" class="contacts-btn">Відправити</button>
+              <button type="submit" class="contacts-btn" id="contacts-btn">Відправити</button>
             </li>
           </ul>
           </div>
+          <div id="message-true" class="message-true">
+          <p>Заявку відправлено!</p>
+          </div>
+          <div id="message-false" class="message-false">
+          <p>Помилка! Перевірьте правильність введенних данних!</p>
+          </div>
+          <div id="message-false-unknown" class="message-false-unknown">
+            <p>Невідома помилка!</p>
+            </div>
         </form>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script>
           const CHAT_ID = "-1002440644199";
           const URI_API = 'https://api.telegram.org/bot7611522727:AAG5QaGW_yotZrXVYHiAETjNKO5ixtbZa8Y/sendMessage';
+          const success = document.getElementById('message-true');
+          const error = document.getElementById('message-false'); 
+          const error_unknown = document.getElementById('error-unknown'); 
 
           document.getElementById('tg').addEventListener('submit', function(e) {
             e.preventDefault();
-            
             let message = 'Заявка з сайту: \n';
-            
-            message += 'Імя : ' + this.name.value + "\n";
+            message += 'Ім`я : ' + this.name.value + "\n";
+            message += 'Адреса : ' + this.address.value + "\n";
             message += "Телефон : " + this.phone.value;
+
+            if(this.name.value == "" || this.address.value == "" || this.phone.value == "")
+          {
+            error.style.display = "block";
+            return;
+          }
 
             axios.post(URI_API, {
               chat_id : CHAT_ID,
               parse_mod : 'html',
               text: message
+            })
+            .then((res) => {
+              this.name.value = "";
+              this.address.value = "";
+              this.phone.value = "";
+              success.style.display = "block";
+              error.style.display = "none";
+              document.getElementById('contacts-btn').style.display = "none";
+            })
+            .catch((err) => {
+            error.style.display = "block";
+            })
+            .finally(() => {
             })
           })
         </script>
