@@ -143,6 +143,11 @@ a {
     font-size: 18px;
 }
 
+.about-title {
+margin-top: 0;
+padding-top: 20px;
+}
+
 .about-span {
     color: #824a01;
 }

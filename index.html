@@ -55,7 +55,7 @@
           </div>
       </section>
       <section class="about">
-      <h2><span class="about-span">Майстри гармонії:</span> ваші експерти в малярних роботах у <span class="about-span">Києві</span></h2>
+      <h2 class="about-title"><span class="about-span">Майстри гармонії:</span> ваші експерти в малярних роботах у <span class="about-span">Києві</span></h2>
       <h3>Вітаємо вас на нашому веб-сайті, де ми пропонуємо високоякісні малярні послуги у Києві!</h3><p>Ми - команда професіоналів з багаторічним досвідом, які спеціалізуються у плиточних, гіпсокартонних роботах, штукатурці, шпаклюванні та фарбуванні стін. Наша місія - створювати найкращі рішення для ваших приміщень, надаючи їм неповторний вигляд і забезпечуючи якість, якою ви будете пишатися.</p>
       <h2><span class="about-span">Наші переваги:</span></h2>
       <ul class="about-list">
@@ -143,58 +143,7 @@
             </li>
           </ul>
           </div>
-          <div id="message-true" class="message-true">
-          <p>Заявку відправлено!</p>
-          </div>
-          <div id="message-false" class="message-false">
-          <p>Помилка! Перевірьте правильність введенних данних!</p>
-          </div>
-          <div id="message-false-unknown" class="message-false-unknown">
-            <p>Невідома помилка!</p>
-            </div>
-        </form>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script>
-          const CHAT_ID = "-1002440644199";
-          const URI_API = 'https://api.telegram.org/bot7611522727:AAG5QaGW_yotZrXVYHiAETjNKO5ixtbZa8Y/sendMessage';
-          const success = document.getElementById('message-true');
-          const error = document.getElementById('message-false'); 
-          const error_unknown = document.getElementById('error-unknown'); 
-
-          document.getElementById('tg').addEventListener('submit', function(e) {
-            e.preventDefault();
-            let message = 'Заявка з сайту: \n';
-            message += 'Ім`я : ' + this.name.value + "\n";
-            message += 'Адреса : ' + this.address.value + "\n";
-            message += "Телефон : " + this.phone.value;
-
-            if(this.name.value == "" || this.address.value == "" || this.phone.value == "")
-          {
-            error.style.display = "block";
-            return;
-          }
-
-            axios.post(URI_API, {
-              chat_id : CHAT_ID,
-              parse_mod : 'html',
-              text: message
-            })
-            .then((res) => {
-              this.name.value = "";
-              this.address.value = "";
-              this.phone.value = "";
-              success.style.display = "block";
-              error.style.display = "none";
-              document.getElementById('contacts-btn').style.display = "none";
-            })
-            .catch((err) => {
-            error.style.display = "block";
-            })
-            .finally(() => {
-            })
-          })
-        </script>
-
+          <!-- scipt app here -->
         </section>
   </main>
     <footer class="footer">
