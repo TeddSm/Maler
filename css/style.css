@@ -93,22 +93,22 @@ a {
 
 .hero {
     background-image: url(../images/photo.jpg);
-    width: 1519px;
-    height: 700px;
+    max-width: 1519px;
+    min-height: 700px;
     padding-left: 100px;
-    align-items: center;
     color: aliceblue;
+    display: flex;
+    align-items: center;
 }
 
 .text-overlay {
-    padding-top: 25vh;
+    padding-top: ;
 }
 
 .hero-title {
     font-size: 60px;
     font-weight: 900;
     margin: 0 0;
-    padding: 10px 10px;
 }
 
 .hero-text {
