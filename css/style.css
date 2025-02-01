@@ -261,7 +261,7 @@ padding-top: 20px;
 }
 
 .works-img {
-    width: 1440px;
+    max-width: 1440px;
     height: 700px;
 }
 
