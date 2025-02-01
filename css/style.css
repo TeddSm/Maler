@@ -164,12 +164,16 @@ padding-top: 20px;
     list-style: none;
     margin-top: 30px;
     display: flex;
-    padding: 0 0px;
+    flex-wrap: wrap;
+    gap: 30px;
     text-align: center;
+    align-content: center;
+    padding: 0 0px;
+    justify-content: center;
 }
 
 .about-item {
-    margin: 0 10px 10px;
+    max-width: 300px;
     padding: 10px 10px;
     background-color: #824a012b;
     border-radius: 60px;
@@ -224,6 +228,7 @@ padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 .consultation-item {
