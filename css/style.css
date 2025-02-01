@@ -99,6 +99,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    max-width: 100%;
     min-height: 900px;
     padding-left: 100px;
     color: aliceblue;
