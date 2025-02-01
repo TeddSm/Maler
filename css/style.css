@@ -16,7 +16,7 @@ a {
 
 .container {
     margin: 0 auto;
-    padding: 0 1.6rem;
+    padding: 0 10px;
 }
 
 /* HEADER */
@@ -35,7 +35,7 @@ a {
     display: flex;
     align-items: center;
     font-weight: 900;
-    font-size: 2.4rem;
+    font-size: 39px;
 }
 
 .header-address {
