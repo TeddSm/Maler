@@ -334,3 +334,49 @@ padding-top: 20px;
 .ttlist {
     display: flex;
 }
+
+@media screen and (max-width:767px) {
+    .hero {
+    padding-left: 15px;
+    }
+
+    .text-overlay {
+        padding: 10px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .hero-link {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .hero-link-img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .about {
+        padding: 0 10px 10px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .service-title {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .works-text {
+        padding: 0 15px;
+        margin: 0;
+    }
+}
